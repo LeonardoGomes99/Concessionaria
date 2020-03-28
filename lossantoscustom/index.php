@@ -7,11 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="src/css/style.css">
     
+    
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Cadastro</a></li>
+            <li><a href="home">Home</a></li>
+            <li><a href="login">Login</a></li>
+            <li><a href="cadastro">Cadastro</a></li>
         </ul>
+    
 
 </head>
 
@@ -21,7 +23,8 @@
     $pages = array(
         "404" => "404",
         "home" => "home",
-        "login" => "login"
+        "login" => "login",
+        "cadastro" => "cadastro"
     );
 
 
