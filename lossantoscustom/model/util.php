@@ -28,11 +28,11 @@ class Util
                     <img class="card-img-top imgine" src="../<?= $game['wallpaper'] ?>">
                     <div class="card-body">
                         <h5 class="the_game"><span><?= $game["title"] ?></span></h5>
-                            <div class="row ml-2 mr-2">
-                                <div class="mr-auto text-center"><?= $game["console"] ?></div>
-                                <div class="ml-auto text-center"><?= $this->money_blr($game["value"]) ?></div>
-                            </div>
-           
+                        <div class="row ml-2 mr-2">
+                            <div class="mr-auto text-center"><?= $game["console"] ?></div>
+                            <div class="ml-auto text-center"><?= $this->money_blr($game["value"]) ?></div>
+                        </div>
+
                     </div>
                 </div>
             </div>
