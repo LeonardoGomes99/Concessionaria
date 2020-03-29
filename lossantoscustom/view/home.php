@@ -15,3 +15,17 @@
     <p class="marca">Marca: Crack</p>
     <p class="preco">Preço: R$3000,00</p>
 </div>
+
+<div class="boxcar">
+    <div class="boxcarimg"><img src="src/public/mcqueen.jpg" class="carimg" alt="image"></div>
+    <p class="modelo">Modelo: Relampâgo Crackinho</p>
+    <p class="marca">Marca: Crack</p>
+    <p class="preco">Preço: R$3000,00</p>
+</div>
+
+<div class="boxcar" style="left:500px;">
+    <div class="boxcarimg"><img src="src/public/mcqueen.jpg" class="carimg" alt="image"></div>
+    <p class="modelo">Modelo: Relampâgo Crackinho</p>
+    <p class="marca">Marca: Crack</p>
+    <p class="preco">Preço: R$3000,00</p>
+</div>
