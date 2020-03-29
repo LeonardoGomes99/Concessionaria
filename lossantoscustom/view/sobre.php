@@ -6,15 +6,22 @@
 
     .devcard {
         margin: 30px;
-        margin-top: 100px;
+        margin-top: 20px;
         position: relative;
         display: inline-block;
-        width: 300px;
+        width: 250px;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.9);
-        box-shadow: 0px 0px 10px 2px #4D4DFF;
+        box-shadow: 0px 0px 10px 2px #fff;
         color: white;
         border-radius: 3px;
+    }
+
+    .box-shadow-blue{
+        box-shadow: 0px 0px 10px 2px #4D4DFF;
+    }
+    .box-shadow-pink{
+        box-shadow: 0px 0px 10px 2px #FC0FC0;
     }
 
     .devcard img {
@@ -23,14 +30,13 @@
     }
 
     .devcard .nome {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 15px;
         font-size: 30px;
     }
 
     .devcard .funcao {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 15px;
         font-size: 25px;
     }
 
@@ -46,8 +52,12 @@
 </style>
 
 <div class="areas">
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="devs">
-        <div class="devcard">
+        <div class="devcard box-shadow-blue">
             <div class="image">
                 <img src="src/public/team/leonardo.jpg" class="carimg">
             </div>
@@ -55,10 +65,10 @@
                 Leonardo Gomes
             </div>
             <div class="funcao">
-                Web designer
+                FullStack
             </div>
         </div>
-        <div class="devcard">
+        <div class="devcard box-shadow-blue">
             <div class="image">
                 <img src="src/public/team/jhonatan.jpg" class="carimg">
             </div>
@@ -66,7 +76,42 @@
                 Jhonatan Luiz
             </div>
             <div class="funcao">
-                Developer
+                FullStack
+            </div>
+        </div>
+    </div>
+    <div class="devs">
+        <div class="devcard box-shadow-pink">
+            <div class="image">
+                <img src="src/public/team/luisa.jpg" class="carimg">
+            </div>
+            <div class="nome">
+                Luisa Couto
+            </div>
+            <div class="funcao">
+                Web designer
+            </div>
+        </div>
+        <div class="devcard box-shadow-pink">
+            <div class="image">
+                <img src="src/public/team/mateus.jpg" class="carimg">
+            </div>
+            <div class="nome">
+                Mateus Leonardo
+            </div>
+            <div class="funcao">
+                Web designer
+            </div>
+        </div>
+        <div class="devcard box-shadow-pink">
+            <div class="image">
+                <img src="src/public/team/vitoria.jpg" class="carimg">
+            </div>
+            <div class="nome">
+                Vitoria
+            </div>
+            <div class="funcao">
+                Web designer
             </div>
         </div>
     </div>
