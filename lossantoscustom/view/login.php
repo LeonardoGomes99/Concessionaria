@@ -1,7 +1,3 @@
-<?php
-session_start();
-session_destroy();
-?>
 <style>
     html {
         background: url("src/public/background2.jpg") no-repeat center fixed;

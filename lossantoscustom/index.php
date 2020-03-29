@@ -1,7 +1,7 @@
 <?php
 require_once("model/util.php");
 $util = new Util();
-$util->sessao();
+$sessao = $util->sessao();
 ?>
 <!DOCTYPE html>
 <html lang="en">
