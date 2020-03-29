@@ -26,7 +26,8 @@ $sessao = $util->sessao();
         "home" => "home",
         "login" => "login",
         "cadastro" => "cadastro",
-        "cradasto" => "cradasto"
+        "cradasto" => "cradasto",
+        "sobre" => "sobre"
     );
 
 
