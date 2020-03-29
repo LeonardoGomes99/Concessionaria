@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Tempo de geração: 28-Mar-2020 às 20:36
+-- Host: localhost
+-- Tempo de geração: 29/03/2020 às 22:18
 -- Versão do servidor: 10.4.11-MariaDB
--- versão do PHP: 7.2.26
+-- Versão do PHP: 7.2.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,91 +25,24 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cars`
+-- Estrutura para tabela `favorites`
 --
 
-CREATE TABLE `cars` (
+CREATE TABLE `favorites` (
   `id` int(11) NOT NULL,
-  `marca` varchar(100) NOT NULL,
-  `modelo` varchar(100) NOT NULL,
-  `chassi` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `sells`
---
-
-CREATE TABLE `sells` (
-  `id` int(11) NOT NULL,
-  `id_car` int(255) NOT NULL,
-  `id_user` int(255) NOT NULL,
-  `data` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `users`
---
-
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `senha` varchar(100) NOT NULL
+  `id_user` int(11) NOT NULL,
+  `id_car` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `users`
---
-
-INSERT INTO `users` (`id`, `email`, `senha`) VALUES
-(1, 'admin@gmail.com', '123');
-
---
--- Índices para tabelas despejadas
+-- Índices de tabelas apagadas
 --
 
 --
--- Índices para tabela `cars`
+-- Índices de tabela `favorites`
 --
-ALTER TABLE `cars`
+ALTER TABLE `favorites`
   ADD PRIMARY KEY (`id`);
-
---
--- Índices para tabela `sells`
---
-ALTER TABLE `sells`
-  ADD PRIMARY KEY (`id`);
-
---
--- Índices para tabela `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT de tabelas despejadas
---
-
---
--- AUTO_INCREMENT de tabela `cars`
---
-ALTER TABLE `cars`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de tabela `sells`
---
-ALTER TABLE `sells`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de tabela `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
