@@ -15,6 +15,8 @@ $sessao = $util->sessao();
         <li><a href="home">Home</a></li>
         <li><a href="login">Login</a></li>
         <li><a href="cadastro">Cadastro</a></li>
+        <li><a href="sobre">Sobre</a></li>
+
     </ul>
 </head>
 
@@ -26,7 +28,8 @@ $sessao = $util->sessao();
         "home" => "home",
         "login" => "login",
         "cadastro" => "cadastro",
-        "cadastrocarro" => "cadastrocarro"
+        "cadastrocarro" => "cadastrocarro",
+        "sobre" => "sobre"
     );
 
 
