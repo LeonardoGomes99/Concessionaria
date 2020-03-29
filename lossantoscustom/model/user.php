@@ -3,7 +3,7 @@ class User
 {
     //id email senha
     /*
-    $car = array(
+    $user = array(
         "id" => $id,
         "email" => $email,
         "senha" => $senha
@@ -16,7 +16,7 @@ class User
         $database = new Database();
         $connection = $database->connection();
 
-        $sql = ("INSERT INTO carts (email, senha)
+        $sql = ("INSERT INTO users (email, senha)
             VALUES (:email, :senha)");
 
         $connection->prepare($sql)->execute($user);

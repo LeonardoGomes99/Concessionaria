@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/css/style.css">
-    
-    
-        <ul>
-            <li><a href="home">Home</a></li>
-            <li><a href="login">Login</a></li>
-            <li><a href="cadastro">Cadastro</a></li>
-        </ul>
-    
+
+
+    <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="login">Login</a></li>
+        <li><a href="cadastro">Cadastro</a></li>
+    </ul>
+
 
 </head>
 
@@ -36,15 +36,22 @@
             $method = true;
         }
 
+        if ($method) {
+            $method = explode('/', $_GET["url"])[1];
 
-        if (isset($pages[$page])) {
-            if ($method) {
-                $method = explode('/', $_GET["url"])[1];
-            } else {
-                require_once("view/" . $page . ".php");
-            }
+            require_once("controller/" . $page . ".php");
+
+            $classe = ucfirst($page) . "Control";
+            $func = new $classe();
+            $func->$method();
+            
         } else {
-            require_once("view/" . 404 . ".php");
+            if (isset($pages[$page]) || $method) {
+
+                require_once("view/" . $page . ".php");
+            } else {
+                require_once("view/" . 404 . ".php");
+            }
         }
     } else {
         require_once("view/" . 404 . ".php");

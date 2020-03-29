@@ -2,7 +2,7 @@
 echo "<body style='background: url(src/public/background2.jpg);'>";
 ?>
 
-<form>
+<form action="user/logar" method="post">
     <div class="container">
         
             <label class="femail" for="email">Email</label>
