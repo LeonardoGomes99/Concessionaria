@@ -5,8 +5,6 @@
     }
 </style>
 
-<h1>cadastro carro</h1>
-
 <form enctype="multipart/form-data" action="car/cadastrar" method="post">
     <div class="boxaddcar">
             <label class="cadcarmarca" for="cadcarmarca">Marca Carro</label>
