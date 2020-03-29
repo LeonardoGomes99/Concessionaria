@@ -1,13 +1,15 @@
 <?php
 class Car
 {
-    //id, marca, modelo, chassi
+    //id, marca, modelo, preco, detalhes, imagem
     /*
     $car = array(
         "id" => $id,
         "marca" => $marca,
         "modelo" => $modelo,
-        "chassi" => $chassi
+        "preco" => $preco,
+        "detalhes" => $detalhes,
+        "imagem" => $imagem
     );
     */
 
@@ -17,8 +19,8 @@ class Car
         $database = new Database();
         $connection = $database->connection();
 
-        $sql = ("INSERT INTO carts (marca, modelo, chassi)
-            VALUES (:marca, :modelo, :chassi)");
+        $sql = ("INSERT INTO cars (marca, modelo, preco, detalhes, imagem)
+            VALUES (:marca, :modelo, :preco, :detalhes, :imagem)");
 
         $connection->prepare($sql)->execute($car);
     }
@@ -50,7 +52,9 @@ class Car
                 "id" => $row['id'],
                 "marca" => $row['marca'],
                 "modelo" => $row['modelo'],
-                "chassi" => $row['chassi']
+                "preco" => $row['preco'],
+                "detalhes" => $row['detalhes'],
+                "imagem" => $row['imagem']
             );
 
             array_push($all_data, $data);

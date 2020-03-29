@@ -25,7 +25,8 @@ $sessao = $util->sessao();
         "404" => "404",
         "home" => "home",
         "login" => "login",
-        "cadastro" => "cadastro"
+        "cadastro" => "cadastro",
+        "cradasto" => "cradasto"
     );
 
 
