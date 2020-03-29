@@ -39,12 +39,15 @@
         if ($method) {
             $method = explode('/', $_GET["url"])[1];
 
-            require_once("controller/" . $page . ".php");
+            if (file_exists("controller/" . $page . ".php")) {
+                require_once("controller/" . $page . ".php");
 
-            $classe = ucfirst($page) . "Control";
-            $func = new $classe();
-            $func->$method();
-            
+                $classe = ucfirst($page) . "Control";
+                $func = new $classe();
+                $func->$method();
+            } else {
+                header('Location: ../home');
+            }
         } else {
             if (isset($pages[$page]) || $method) {
 
@@ -54,7 +57,7 @@
             }
         }
     } else {
-        require_once("view/" . 404 . ".php");
+        header('Location: home');
     }
     ?>
 </body>
