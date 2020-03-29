@@ -29,6 +29,7 @@ $sessao = $util->sessao();
         "login" => "login",
         "cadastro" => "cadastro",
         "cadastrocarro" => "cadastrocarro",
+        "carro" => "carro",
         "sobre" => "sobre"
     );
 
