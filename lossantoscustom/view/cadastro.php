@@ -4,9 +4,10 @@
         background-size: cover;
     }
 </style>
+
 <form action="user/cadastrar" method="post">
 
-    <div class="container">
+    <div class="container former">
 
         <label class="femail" for="email">Email</label>
         <input type="text" id="email" name="email">

@@ -18,27 +18,10 @@ class Util
         return $name;
     }
 
-    function card_generation($data)
+    function sessao()
     {
-        $cont = 0;
-        foreach ($data as $key => $game) {
-?>
-            <div class="col-lg-3 col-sm-6 mb-4" onclick="window.location.href ='../controller/game.php?op=game&cod=<?= $game['id'] ?>'">
-                <div class="card">
-                    <img class="card-img-top imgine" src="../<?= $game['wallpaper'] ?>">
-                    <div class="card-body">
-                        <h5 class="the_game"><span><?= $game["title"] ?></span></h5>
-                        <div class="row ml-2 mr-2">
-                            <div class="mr-auto text-center"><?= $game["console"] ?></div>
-                            <div class="ml-auto text-center"><?= $this->money_blr($game["value"]) ?></div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-<?php
-            $cont++;
-        }
-        return $cont;
+        require_once("controller/user.php");
+        $user = new UserControl();
+        return $user->status();
     }
 }

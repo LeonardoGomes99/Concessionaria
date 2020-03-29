@@ -1,3 +1,8 @@
+<?php
+require_once("model/util.php");
+$util = new Util();
+$util->sessao();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,15 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/css/style.css">
-
-
     <ul>
         <li><a href="home">Home</a></li>
         <li><a href="login">Login</a></li>
         <li><a href="cadastro">Cadastro</a></li>
     </ul>
-
-
 </head>
 
 <body>

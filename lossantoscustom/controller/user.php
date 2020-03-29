@@ -30,9 +30,9 @@ class UserControl
         $user = new User();
         $data = array("email" => $_POST["email"], "senha" => $_POST["senha"]);
 
-        $user_data = $user->select_where(("where email = '" . $data['email'] . "'"))[0];
+        $user_data = $user->select_where(("where email = '" . $data['email'] . "'"));
 
-        if ($user_data && $user_data["email"] == $data["email"] && $user_data["senha"] == $data["senha"]) {
+        if ($user_data && $user_data[0]["email"] == $data["email"] && $user_data[0]["senha"] == $data["senha"]) {
             session_start();
             $_SESSION['lossantoscustom_email'] = $data["email"];
             $_SESSION['lossantoscustom_senha'] = $data["senha"];
@@ -50,5 +50,32 @@ class UserControl
             </script>
 <?php
         }
+    }
+
+    function deslogar()
+    {
+        session_start();
+        session_destroy();
+    }
+
+    function status()
+    {
+        session_start();
+
+        if (isset($_SESSION['lossantoscustom_email']) && isset($_SESSION['lossantoscustom_senha'])) {
+            require_once("model/user.php");
+            $user = new User();
+
+            $email = $_SESSION['lossantoscustom_email'];
+            $senha = $_SESSION['lossantoscustom_senha'];
+
+            $user_data = $user->select_where("where email = '$email' and senha = '$senha'");
+
+            if ($user_data) {
+                return $user_data;
+            }
+        }
+        session_destroy();
+        return false;
     }
 }
