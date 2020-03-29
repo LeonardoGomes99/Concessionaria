@@ -1,7 +1,9 @@
-<?php
-echo "<body style='background: url(src/public/background2.jpg);'>";
-?>
-
+<style>
+    html {
+        background: url("src/public/background2.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+</style>
 <div class="homepageImg"><img src="src/public/h1.jpg" class="homeimg1" alt="image"></div>
 <div class="homepageImg"><img src="src/public/h2.jpg" class="homeimg2" alt="image"></div>
 <div class="homepageImg"><img src="src/public/h3.jpg" class="homeimg3" alt="image"></div>

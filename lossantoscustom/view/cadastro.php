@@ -1,7 +1,9 @@
-<?php
-echo "<body style='background: url(src/public/background.jpg);'>";
-?>
-
+<style>
+    html {
+        background: url("src/public/background.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+</style>
 <form action="user/cadastrar" method="post">
 
     <div class="container">

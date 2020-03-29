@@ -4,27 +4,21 @@ body
     padding: 0;
     display: flex;
     justify-content: center;
-    background:#333;
-    height: 100v;
-    
-    background-size: 50%;
-    background-size: 3em;
-    background-size: 12px;
-    background-size: auto;
-
 }
 
 
 div.container {
    width: 400px;
    position: absolute;
-   left:580px;
+   left: 50%;
    height: 600px;
    padding: 30px 20px;
    margin: 70px auto;
    box-shadow: 0px 0px 10px 2px grey;
    border: 10px;
    background-color: rgba(0, 0, 0, 0.7);
+   margin-left: -200px;
+   border-radius: 3px;
       
 }
 
