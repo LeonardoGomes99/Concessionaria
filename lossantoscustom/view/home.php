@@ -12,17 +12,14 @@
         width: 250px;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.9);
-        box-shadow: 0px 0px 10px 2px #fff;
+        box-shadow: 0px 0px 10px 2px gray;
         color: white;
         border-radius: 3px;
     }
 
-    .box-shadow-blue {
-        box-shadow: 0px 0px 10px 2px #4D4DFF;
-    }
-
-    .box-shadow-pink {
-        box-shadow: 0px 0px 10px 2px #FC0FC0;
+    .carshomes:hover{
+        transition: 0.5s; 
+        box-shadow: 0px 0px 10px 2px #fff;
     }
 
     .carshomes img {

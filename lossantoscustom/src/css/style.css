@@ -127,8 +127,9 @@ input[type="submit"]
 ul
 {
     position: absolute;
-    left: 100px;
+    left: 5%;
     margin: 0;
+    margin-top: 10px;
     padding: 0;
     display: flex;
     
@@ -137,7 +138,8 @@ ul
 ul li
 {
     list-style: none;
-    margin: 0 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     transition: 0.5s;
 }
 
@@ -147,11 +149,13 @@ ul li a
     position: relative;
     text-decoration: none;
     padding: 5px;
-    font-size: 18px;
+    font-size: 20px;
     font-family: sans-serif;
     color: #fff;
     text-transform: uppercase; 
     transition: 0.5s; 
+
+    text-shadow: 0 0 0.2em gray, 0 0 0.2em gray, 0 0 0.2em gray;
 }
 
 ul:hover li a
