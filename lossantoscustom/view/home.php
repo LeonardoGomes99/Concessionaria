@@ -29,15 +29,21 @@
         width: 100%;
     }
 
-    .carshomes .nome {
+    .carshomes .carshomemodelo {
         margin-top: 15px;
-        font-size: 30px;
+        font-size: 20px;
     }
 
-    .carshomes .funcao {
+    .carshomes .carshomemarca {
         margin-top: 10px;
         margin-bottom: 15px;
-        font-size: 25px;
+        font-size: 15px;
+    }
+
+    .carshomes .carshomepreco {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 15px;
     }
 
     .carshome {
