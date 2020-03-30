@@ -81,7 +81,7 @@
         $cars = $car->select_where("");
         foreach ($cars as $key => $value) {
         ?>
-            <div class="carshomes">
+            <div class="carshomes" onclick="window.location.href ='carro?id= <?= $value['id'] ?>'">
                 <div class="image">
                     <img class="imagine" src="<?= $value["imagem"] ?>" class="carimg">
                 </div>

@@ -1,3 +1,13 @@
+<?php
+$id = $_GET["id"];
+
+require_once("model/car.php");
+
+$car = new Car();
+$carro = $car->select_where("where id = '$id'")[0];
+
+?>
+
 <style>
     html {
         background: url("src/public/background3.jpg") no-repeat center fixed;
@@ -9,10 +19,9 @@
 
 
 <div class="carshow">
-    <div class="carshowinside"><img src="src/public/mcqueen.jpg" class="carimg" alt="image"></div>
-        <label class="showcarmodelo" for="cadcarmodelo">Modelo</label>
-        <label class="showcarmarca" for="cadcarmarca">Marca Carro</label>
-        <label class="showcarpreco" for="cadcarpreco">Preço</label>
-        <label class="showcardetalhes" for="cadcardetalhes">Detalhes</label>
-    </div>
+    <div class="carshowinside"><img src="<?= $carro["imagem"] ?>" class="carimg" alt="image"></div>
+    <label class="showcarmodelo" for="cadcarmodelo">Modelo: <?= $carro["modelo"] ?></label>
+    <label class="showcarmarca" for="cadcarmarca">Marca Carro: <?= $carro["marca"] ?></label>
+    <label class="showcarpreco" for="cadcarpreco">Preço: <?= $carro["preco"] ?></label>
+    <label class="showcardetalhes" for="cadcardetalhes">Detalhes: <?= $carro["detalhes"] ?></label>
 </div>
