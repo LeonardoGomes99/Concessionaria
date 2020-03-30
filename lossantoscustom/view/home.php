@@ -28,6 +28,10 @@
     .carshomes img {
         border-radius: 3px 3px 0px 0px;
         width: 100%;
+
+        height: 160px;
+        object-fit: cover;
+        object-position: center;
     }
 
     .carshomes .carshomemodelo {
@@ -56,6 +60,9 @@
         display: block;
         text-align: center;
     }
+
+
+ 
 </style>
 
 <div class="areas">
@@ -67,48 +74,31 @@
     <br>
 
     <div class="carshome">
-        <div class="carshomes">
-            <div class="image">
-                <img src="src/public/mcqueen.jpg" class="carimg">
+
+        <?php
+        require_once("model/car.php");
+        $car = new Car();
+        $cars = $car->select_where("");
+        foreach ($cars as $key => $value) {
+        ?>
+            <div class="carshomes">
+                <div class="image">
+                    <img class="imagine" src="<?= $value["imagem"] ?>" class="carimg">
+                </div>
+                <div class="carshomemodelo">
+                    Modelo: <?= $value["modelo"] ?>
+                </div>
+                <div class="carshomemarca">
+                    Marca: <?= $value["marca"] ?>
+                </div>
+                <div class="carshomepreco">
+                    Preço: <?= $util->money_blr($value["preco"]) ?>
+                </div>
             </div>
-            <div class="carshomemodelo">
-                Modelo: Relampâgo Crackinho
-            </div>
-            <div class="carshomemarca">
-                Marca: Crack
-            </div>
-            <div class="carshomepreco">
-                Preço: R$3000,00
-            </div>
-        </div>
-        <div class="carshomes">
-            <div class="image">
-                <img src="src/public/mcqueen.jpg" class="carimg">
-            </div>
-            <div class="carshomemodelo">
-                Modelo: Relampâgo Crackinho
-            </div>
-            <div class="carshomemarca">
-                Marca: Crack
-            </div>
-            <div class="carshomepreco">
-                Preço: R$3000,00
-            </div>
-        </div>
-        <div class="carshomes">
-            <div class="image">
-                <img src="src/public/mcqueen.jpg" class="carimg">
-            </div>
-            <div class="carshomemodelo">
-                Modelo: Relampâgo Crackinho
-            </div>
-            <div class="carshomemarca">
-                Marca: Crack
-            </div>
-            <div class="carshomepreco">
-                Preço: R$3000,00
-            </div>
-        </div>
+        <?php
+        }
+        ?>
+
 
     </div>
 </div>

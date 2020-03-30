@@ -20,7 +20,7 @@ class CarControl
             "modelo" => $_POST["modelo"],
             "preco" => $_POST["preco"],
             "detalhes" => $_POST["detalhes"],
-            "imagem" => $wallpaper_url,
+            "imagem" => $wallpaper_url
         );
         $car->create($data);
         header('Location: ../home');

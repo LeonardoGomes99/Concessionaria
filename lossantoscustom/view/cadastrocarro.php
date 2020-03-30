@@ -21,7 +21,7 @@
         <input name="modelo" type="text">
 
         <label class="cadcarpreco" for="cadcarpreco">Preço</label>
-        <input name="preco" type="text">
+        <input name="preco" type="number">
 
         <label class="cadcardetalhes" for="cadcardetalhes">Detalhes</label>
         <input name="detalhes" type="text">
