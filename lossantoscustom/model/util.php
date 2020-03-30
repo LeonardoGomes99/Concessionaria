@@ -22,6 +22,6 @@ class Util
     {
         require_once("controller/user.php");
         $user = new UserControl();
-        return $user->status();
+        return $user->status()[0];
     }
 }

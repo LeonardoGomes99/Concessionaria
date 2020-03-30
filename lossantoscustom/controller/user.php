@@ -56,6 +56,7 @@ class UserControl
     {
         session_start();
         session_destroy();
+        header('Location: ../home');
     }
 
     function status()

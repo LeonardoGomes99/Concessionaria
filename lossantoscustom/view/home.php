@@ -17,10 +17,11 @@
         border-radius: 3px;
     }
 
-    .box-shadow-blue{
+    .box-shadow-blue {
         box-shadow: 0px 0px 10px 2px #4D4DFF;
     }
-    .box-shadow-pink{
+
+    .box-shadow-pink {
         box-shadow: 0px 0px 10px 2px #FC0FC0;
     }
 
@@ -57,47 +58,57 @@
     }
 </style>
 
+<div class="areas">
 
-<div class="homepageImg"><img src="src/public/h1.jpg" class="homeimg1" alt="image"></div>
-<div class="homepageImg"><img src="src/public/h2.jpg" class="homeimg2" alt="image"></div>
-<div class="homepageImg"><img src="src/public/h3.jpg" class="homeimg3" alt="image"></div>
-<div class="homepageImg"><img src="src/public/h4.jpg" class="homeimg4" alt="image"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-<div class="boxcar">
-    <div class="boxcarimg"><img src="src/public/mcqueen.jpg" class="carimg" alt="image"></div>
-    <p class="modelo">Modelo: Relampâgo Crackinho</p>
-    <p class="marca">Marca: Crack</p>
-    <p class="preco">Preço: R$3000,00</p>
-</div>
-
-<div class="carshome">
-        <div class="carshomes box-shadow-blue">
+    <div class="carshome">
+        <div class="carshomes">
             <div class="image">
                 <img src="src/public/mcqueen.jpg" class="carimg">
             </div>
             <div class="carshomemodelo">
-                 Modelo: Relampâgo Crackinho
+                Modelo: Relampâgo Crackinho
             </div>
             <div class="carshomemarca">
-                 Marca: Crack
+                Marca: Crack
             </div>
             <div class="carshomepreco">
-                 Preço: R$3000,00
+                Preço: R$3000,00
             </div>
         </div>
-        <div class="carshomes box-shadow-blue">
+        <div class="carshomes">
             <div class="image">
                 <img src="src/public/mcqueen.jpg" class="carimg">
             </div>
             <div class="carshomemodelo">
-                 Modelo: Relampâgo Crackinho
+                Modelo: Relampâgo Crackinho
             </div>
             <div class="carshomemarca">
-                 Marca: Crack
+                Marca: Crack
             </div>
             <div class="carshomepreco">
-                 Preço: R$3000,00
+                Preço: R$3000,00
             </div>
         </div>
+        <div class="carshomes">
+            <div class="image">
+                <img src="src/public/mcqueen.jpg" class="carimg">
+            </div>
+            <div class="carshomemodelo">
+                Modelo: Relampâgo Crackinho
+            </div>
+            <div class="carshomemarca">
+                Marca: Crack
+            </div>
+            <div class="carshomepreco">
+                Preço: R$3000,00
+            </div>
+        </div>
+
     </div>
 </div>

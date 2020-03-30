@@ -11,13 +11,6 @@ $sessao = $util->sessao();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/css/style.css">
-    <ul>
-        <li><a href="home">Home</a></li>
-        <li><a href="login">Login</a></li>
-        <li><a href="cadastro">Cadastro</a></li>
-        <li><a href="sobre">Sobre</a></li>
-
-    </ul>
 </head>
 
 <body>
@@ -56,7 +49,7 @@ $sessao = $util->sessao();
             }
         } else {
             if (isset($pages[$page]) || $method) {
-
+                require_once("view/menu.php");
                 require_once("view/" . $page . ".php");
             } else {
                 require_once("view/" . 404 . ".php");
