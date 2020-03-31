@@ -14,7 +14,7 @@
             <div class="title">
                 Formulário de Login
             </div>
-            <div class="inputs">
+            <div class="car">
                 <label for="email">Email</label>
                 <input type="text" id="email" name="email">
                 <label for="senha">Senha</label>

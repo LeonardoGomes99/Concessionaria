@@ -3,6 +3,7 @@
         background: url("src/public/background.jpg") no-repeat center fixed;
         background-size: cover;
     }
+
 </style>
 
 

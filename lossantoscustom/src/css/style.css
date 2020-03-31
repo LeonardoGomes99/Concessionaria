@@ -65,6 +65,30 @@ ul li a:hover:before {
     transform: scale(0);
 }
 
+@media only screen and (max-width: 900px) {
+    ul li {
+        margin-right: 8px;
+        margin-left: 8px;
+        transition: 0.4s;
+    }
+    ul li a {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    ul li {
+        margin-right: 7px;
+        margin-left: 7px;
+        transition: 0.35s;
+    }
+    ul li a {
+        font-size: 15px;
+    }
+}
+
+/* Form de Login - FormBox */
+
 .formbox {
     margin: 30px;
     margin-top: 20px;
@@ -92,11 +116,16 @@ ul li a:hover:before {
 
 .formbox input {
     padding: 10px;
-    margin-left: -10px;
+    margin-left: -13px;
     width: 100%;
     display: block;
-    border-radius: 4px;
     font-size: 15px;
+    border-radius: 4px;
+    border-width: 1px;
+    ;
+    border-style: solid;
+    border-color: gray;
+    box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.4);
 }
 
 .formbox label {
@@ -141,6 +170,39 @@ ul li a:hover:before {
     border-radius: 4px;
     font-size: 30px;
     text-align: center;
+}
+
+.formbox .car label {
+    margin-top: 25px;
+}
+
+.formbox .car input[type="submit"] {
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 900px) {
+    .formbox form {
+        width: 80%;
+    }
+    .formbox {
+        margin: 30px;
+        margin-top: 20px;
+        width: 500px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .formbox form {
+        width: 80%;
+    }
+    .formbox {
+        margin: 10px;
+        margin-top: 10px;
+        width: 400px;
+        text-align: center;
+    }
 }
 
 .areas {
@@ -250,14 +312,59 @@ ul li a:hover:before {
     text-align: justify;
 }
 
-.logo-home {
-  
+@media only screen and (max-width: 900px) {
+    .card-car {
+        width: 600px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    .card-car img {
+        height: 240px;
+    }
+    .card-car .modelo, .card-car .marca, .card-car .preco {
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    .card-car .detalhes {
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
 }
+
+@media only screen and (max-width: 630px) {
+    .card-car {
+        width: 400px;
+        margin: 4px;
+        margin-top: 20px;
+    }
+    .card-car img {
+        height: 180px;
+    }
+    .card-car .modelo, .card-car .marca, .card-car .preco {
+        margin-top: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    .card-car .detalhes {
+        margin-top: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+}
+
+.logo-home {}
 
 .logo-home img {
     width: 60%;
     padding: 0px;
     margin-bottom: -100px;
     margin-top: 40px;
-  
 }

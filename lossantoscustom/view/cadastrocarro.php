@@ -3,6 +3,8 @@
         background: url("src/public/background3.jpg") no-repeat center fixed;
         background-size: cover;
     }
+
+   
 </style>
 
 
@@ -13,7 +15,7 @@
             <div class="title">
                 Cadastro de Carro
             </div>
-            <div class="inputs">
+            <div class="car">
                 <label for="cadcarmarca">Marca Carro</label>
                 <input name="marca" type="text">
 
@@ -26,7 +28,7 @@
                 <label for="cadcardetalhes">Detalhes</label>
                 <input name="detalhes" type="text">
 
-                <br><br>
+              
                 <label for="cadcarimagem">Imagem</label>
                 <input name="imagem" type="file" accept="image/*">
 
