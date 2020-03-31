@@ -5,20 +5,27 @@
     }
 </style>
 
-<form action="user/cadastrar" method="post">
+<div class="formbox-areas">
+    <br><br><br><br><br>
+    <div class="formbox">
+        <form action="user/cadastrar" method="post">
+            <div class="title">
+                Formulário de Cadastro
+            </div>
+            <div class="inputs">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
 
-    <div class="container former">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha">
 
-        <label class="femail" for="email">Email</label>
-        <input type="text" id="email" name="email">
+                <label for="confsenha">Confirme Senha</label>
+                <input type="password" id="confsenha" name="confsenha">
 
-        <label class="fsenha" for="senha">Senha</label>
-        <input type="password" id="senha" name="senha">
-
-        <label class="fconfsenha" for="confsenha">Confirme Senha</label>
-        <input class="ffconfsenha" type="password" id="confsenha" name="confsenha">
-
-        <input class="Eentrar" type="submit" value="Cadastrar" name="Entrar">
-
+                <input type="submit" value="Cadastrar" name="Entrar">
+            </div>
+        </form>
+        <br>
+        <br>
     </div>
-</form>
+</div>

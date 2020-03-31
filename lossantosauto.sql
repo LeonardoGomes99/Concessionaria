@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 31/03/2020 às 01:56
+-- Tempo de geração: 31/03/2020 às 02:02
 -- Versão do servidor: 10.4.11-MariaDB
 -- Versão do PHP: 7.2.27
 
@@ -56,18 +56,6 @@ INSERT INTO `cars` (`id`, `marca`, `modelo`, `preco`, `detalhes`, `imagem`) VALU
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `favorites`
---
-
-CREATE TABLE `favorites` (
-  `id` int(11) NOT NULL,
-  `id_user` int(11) NOT NULL,
-  `id_car` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
 -- Estrutura para tabela `users`
 --
 
@@ -92,12 +80,6 @@ INSERT INTO `users` (`id`, `email`, `senha`) VALUES
 -- Índices de tabela `cars`
 --
 ALTER TABLE `cars`
-  ADD PRIMARY KEY (`id`);
-
---
--- Índices de tabela `favorites`
---
-ALTER TABLE `favorites`
   ADD PRIMARY KEY (`id`);
 
 --
