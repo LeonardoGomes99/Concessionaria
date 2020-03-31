@@ -21,8 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `lossantosauto`
 --
-CREATE DATABASE IF NOT EXISTS `lossantosauto` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `lossantosauto`;
 
 -- --------------------------------------------------------
 

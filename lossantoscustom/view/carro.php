@@ -14,7 +14,7 @@ $carro = $car->select_where("where id = '$id'")[0];
         background-size: cover;
     }
 
-    .devcard {
+    .card-car {
         margin: 30px;
         margin-top: 20px;
         position: relative;
@@ -27,7 +27,7 @@ $carro = $car->select_where("where id = '$id'")[0];
         border-radius: 3px;
     }
 
-    .devcard img {
+    .card-car img {
         border-radius: 3px 3px 0px 0px;
         width: 100%;
 
@@ -36,7 +36,7 @@ $carro = $car->select_where("where id = '$id'")[0];
         object-position: center;
     }
 
-    .devcard .modelo {
+    .card-car .modelo {
         margin-top: 25px;
         margin-left: 25px;
         margin-right: 25px;
@@ -45,7 +45,7 @@ $carro = $car->select_where("where id = '$id'")[0];
         font-size: 30px;
     }
 
-    .devcard .marca {
+    .card-car .marca {
         margin-top: 25px;
         margin-left: 25px;
         margin-right: 25px;
@@ -54,7 +54,7 @@ $carro = $car->select_where("where id = '$id'")[0];
         font-size: 25px;
     }
 
-    .devcard .preco {
+    .card-car .preco {
         margin-top: 25px;
         margin-left: 25px;
         margin-right: 25px;
@@ -63,51 +63,38 @@ $carro = $car->select_where("where id = '$id'")[0];
         font-size: 20px;
     }
 
-    .devcard .detalhes {
+    .card-car .detalhes {
         margin-top: 25px;
         margin-left: 25px;
         margin-right: 25px;
         margin-bottom: 25px;
-       
+
         font-size: 20px;
         text-align: justify;
-        
-    }
 
-    .devs {
-        display: block;
-    }
-
-    .areas {
-        width: 100%;
-        display: block;
-        text-align: center;
     }
 </style>
 
 
 
 <div class="areas">
-    <br>
-    <br>
-    <br>
-    <div class="devs">
-        <div class="devcard">
-            <div class="image">
-                <img src="<?= $carro["imagem"] ?>" class="carimg">
-            </div>
-            <div class="modelo">
-                Modelo: <?= $carro["modelo"] ?>
-            </div>
-            <div class="marca">
-                Marca: <?= $carro["marca"] ?>
-            </div>
-            <div class="preco">
-                A partir de: <?= $util->money_blr($carro["preco"]) ?>
-            </div>
-            <div class="detalhes">
-                Detalhes: <?= $carro["detalhes"] ?>
-            </div>
+    <br><br><br>
+    <div class="card-car">
+        <div class="image">
+            <img src="<?= $carro["imagem"] ?>" class="carimg">
+        </div>
+        <div class="modelo">
+            Modelo: <?= $carro["modelo"] ?>
+        </div>
+        <div class="marca">
+            Marca: <?= $carro["marca"] ?>
+        </div>
+        <div class="preco">
+            A partir de: <?= $util->money_blr($carro["preco"]) ?>
+        </div>
+        <div class="detalhes">
+            Detalhes: <?= $carro["detalhes"] ?>
         </div>
     </div>
+
 </div>

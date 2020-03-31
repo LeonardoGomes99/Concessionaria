@@ -38,7 +38,7 @@ class UserControl
             $_SESSION['lossantoscustom_senha'] = $data["senha"];
         ?>
             <script>
-                alert("Logado com sucesso");
+                //alert("Logado com sucesso");
                 window.location.href = "../home";
             </script>
         <?php
